@@ -19,8 +19,8 @@ def mod(a, b):
     elif b==a:
         return 0
     else:
-        e=mod(b,a)
-        return e
+        a=a-b
+        return mod(a,b)
 
 
 
