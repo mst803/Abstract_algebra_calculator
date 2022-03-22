@@ -13,8 +13,14 @@ def modInverse(a, m):
 
 # add inverese
 def mod(a, b):
-    d  = b - a
-    return d
+    if b>a:
+        d  = b - a
+        return d
+    elif b==a:
+        return 0
+    else:
+        e=mod(a-b,a)
+        return e
 
 
 
